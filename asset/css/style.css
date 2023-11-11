@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.logo-container {
+    animation: fadeInOut 3s infinite alternate;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    max-width: 100px;
+}
+
+nav {
+    background-image: url(https://png.pngtree.com/background/20230528/original/pngtree-gym-is-reflected-in-an-odd-light-picture-image_2773779.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* Centrar la imagen en el eje y */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.3em;
+        flex-grow: 3;
+}
+
+.nav-button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 2px solid rgb(15, 2, 2);
+    width: 170px;
+   
+   
+}
+
+main {
+    padding: 1.5em;
+}
+
+footer {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para pantallas más pequeñas (responsive) */
+@media only screen and (max-width: 700px) {
+    header {
+        padding: 1rem;
+        /* Reducir el padding en pantallas más pequeñas */
+    }
+
+    .logo {
+        max-width: 80px;
+        /* Ajustar el tamaño del logo en pantallas más pequeñas */
+    }
+
+    nav {
+        flex-direction: column;
+        /* Apilar los botones verticalmente en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .nav-button {
+        margin: 5px 0;
+        /* Agregar espacio entre los botones en pantallas más pequeñas */
+    }
+}
